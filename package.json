@@ -17,6 +17,7 @@
     "jshint": "^2.9.6",
     "mocha": "^5.2.0",
     "nyc": "^13.0.1",
+    "rollup": "^2.13.1",
     "uglify-js": "^3.4.9",
     "zuul": "^3.12.0"
   },
@@ -50,7 +51,8 @@
     "unsinged"
   ],
   "license": "MIT",
-  "main": "int64-buffer.js",
+  "main": "dist/int64-buffer.js",
+  "module": "int64-buffer.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kawanet/int64-buffer.git"
@@ -61,5 +63,6 @@
     "test": "make test",
     "zuul-local": "./node_modules/.bin/zuul --open --local 4000 --ui mocha-bdd test/*.js"
   },
-  "typings": "int64-buffer.d.ts"
+  "typings": "int64-buffer.d.ts",
+  "dependencies": {}
 }
